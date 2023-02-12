@@ -1,0 +1,356 @@
+<!DOCTYPE html>         <!--not a tag.. use for give the instruction to browser what type of html we use-->
+<html lang="hi">            <!--language prefer to browser "en":english, "fr":frence, "hi": Hindi -->
+    <head>                 <!--Meta information describes the data of our website.--> 
+        <meta charset="UTF-8">              <!--provide facility any lang can support (some browser does not suport hindi like safari)-->
+        <meta name="description" content="Free web dev sourse">         <!--which is use for create description and search engine put our website in the top-->
+        <meta name="keywords" content="HTML, CSS, web dev">
+        <meta name="author" content="pawan bisht">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">      <!--for create responsive-->
+        <!-- <meta http-equiv="refresh" content="100">         refresh our page every 100 second -->
+        
+        <title>Web dev learning</title>
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/CSS" href="Style.css">            <!--External styling-->
+        <!-- <style>                //internal styling
+            p, h6, h5{
+                font-family: 'Josefin Sans', sans-serif;
+            }
+            h1, h2 {
+                font-family: 'Ubuntu', sans-serif;
+            }
+        </style> -->
+        
+        <!-- <base href="ImagePDF/" target="_blank">                     use for set path in different files(Image,video etc) then use directly file in body tag -->
+        <!-- <script type="text/javascript" src="file.js"></script> -->
+        <!-- <script>
+            alert("Hi...! this is alert..!");
+        </script> -->
+    </head>
+
+    <body text="red" bgcolor="666d6f">
+        <!-- headling -->
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <h2>Lpsum dolor sit amet consectetur adipisicing elit. Veniam, mollitia?</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ut?1</h3>
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, deleniti!</h4>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, iusto.</h5>
+        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, modi.</h6>
+        <h7>Lorem ipsum dolor sit amet, consectetur adipisicing eli</h7>                           <!--- wrong element -->
+
+        <!-- <p>, <b>, <i>, <u>, <mark>, <del>or<s>,<ins>, <sub>, <sup>, <var>-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sit voluptates pariatur, molestiae ad in.</p>
+        <p>Lorem ipsum dolor <b>Pawan</b> sit amet consectetur <i>SLIET</i> adipisicing elit. Quod reiciendis <u>Uttarakhand</u> deleniti consectetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur <b><i>SLIET</i></b> adipisicing elit. Quod reiciendis deleniti consectetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur <mark>Pawan Bisht</mark> adipisicing elit. Quod reiciendis deleniti consectetur?</p>
+        <p>Lorem ipsum dolor sit amet <s>consectetur</s> <del>pawan Bisht</del><ins> komal kanera </ins> adipisicing elit. Quod variable: <var> a, b, c</var> reiciendis deleniti consectetur?</p>
+        <h3>H<sub>2</sub>O</h3>
+        <h3>X<sup>3</sup></h3>
+        
+
+        <!-- inline style- <p style="........"> -->
+        <h2 style="color:brown; background-color:#0abde3; text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+
+        <!--anchar tag: <a href=".....">,  <br>-->
+        <button onclick="window.location.href = 'https://fonts.google.com/';"> Search </button>
+        <a href="https://fonts.google.com/"><button>search</button></a>             <!--this and above are same-->
+        <button>
+            <a href="https://fonts.google.com/" target="_blank" title="click here" style="text-decoration: none;">Search FONTS</a>
+        </button><br>
+        <a href="Index.html">Home</a>    <a href="Index.html">About</a>    <a href="Index.html">contect</a><br><br>
+        <a href="ImagePDF/Intern.pdF" target="_blank"> Download </a><br><br>
+        <a href="videoAudio/16X9 Song.mp4" download="Image"> Download </a><br><br>
+        <a href="ImagePDF/2.png" target="_blank" > Image </a><br><br>
+        <a href="https://www.youtube.com/watch?v=5oH9Nr3bKfw&ab_channel=WBKids" target="_blank">
+            <img src="ImagePDF/2.png" alt="please..set corret path", width="250px", height="200px">
+        </a><br><br>        
+        <a href="#sec">Go to world div</a>
+        <br><br>
+
+        <!-- image tag: <img src="....">,  <hr>-->
+        <img src="ImagePDF/2.png" alt="please..set corret path", width="300px", height="250px" title="this is Image">
+        <hr><hr><br>
+        <hr color="red" width="100" size="10">
+
+
+        <!-- <figure> <figcation>:  use for <img tag> -->
+            <figure style="border: 3px solid gray; padding: 60px; text-align: center;">
+                <img src="ImagePdf/2.PNG" style="width: 45%;">
+                <img src="ImagePdf/2.PNG" style="width: 45%;">
+                <figcaption style="text-align: center;">SLIET - Punjab(India)</figcaption>
+            </figure>
+
+
+        <!--<table>, <caption>, <tr>, <th>, <td>, <thead>, <tbody>, <tfoot>-->
+        <table border="1" cellspacing="0" cellpadding="10" style="text-align: center;">
+            <caption><h3><u>Computer</u></h3></caption>
+            <thead>
+                <tr>                <!--1st row-->
+                 <th>S. No.</th>     <!--column heading-->
+                 <th>Name</th>
+                 <th>DOB</th>
+                 <th>Address</th>
+                 <th>College</th>
+                </tr>
+            </table>
+            <tbody>
+                <tr>            <!--2nd row-->
+                 <td>101</td>                <!--column data-->
+                 <td>Pawan</td>
+                 <td>2323-14-23</td>
+                 <td colspan="2">peris</td>
+                </tr>
+                <tr>            <!--3rd row-->
+                 <td rowspan="2">104</td>
+                 <td>Harry</td>
+                 <td>1212-34-45</td>
+                 <td>Autria</td>
+                 <td>MIT</td>
+                </tr>
+                <tr>            <!--3rd row-->
+                <!-- <td>104</td> -->
+                 <td>Harry</td>
+                 <td>1212-34-45</td>
+                 <td>Autria</td>
+                 <td>MIT</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+
+        
+        <!--list     <ul>, <ol>, <li> -->
+        <ul type="square">
+            <li>pawan</li>
+            <li>naveen</li>
+            <li>kamal</li>
+            <li>robin</li>
+            <li>watch</li>
+        </ul>
+        <ol type="I" start="22">
+            <li>pawan</li>
+            <li>naveen</li>
+            <li>kamal</li>
+            <li>robin</li>
+            <li>watch</li>
+        </ol>
+        <ol type="A">
+            <li>pawan</li>
+            <li>naveen</li>
+            <li>kamal</li>
+            <li>robin</li>
+            <li>watch</li>
+        </ol>
+        <hr><br>
+
+
+        <!-- <form>, <lable>, <input>, <select>, <option>, <optgroup>, <textarea> <datalist>, <button>-->
+        <form action="index2.html" autocomplete="off" method="post" novalidate>
+            <label>Photo</label>
+            <input type="file" name="choosePhoto"></form>
+        </br></br>
+            <label for="user">User:</label>
+            <input type="text" id="user" name="user" placeholder="Enter degree" required >
+        <br><br>
+            <label>Password:</label>
+            <input type="password" name="password" size="200">
+        <br><br>
+            <label>Email:</label>
+            <input type="email" name="email" pattern=".@gmail.com" placeholder="Enter degree" required>
+        <br><br>
+            <label>Mobile Number:</label>
+            <input type="text" name="mobile" autofocus>
+        <br><br>
+            <label>Linked-Id sumbit</label>
+            <input type="url" name="submiturl"  disabled>
+        </br></br>            
+            <label>Total Person</label>
+            <input type="number" min="1" max="5">       <!--numver 1 to 5-->
+        </br></br>
+            <select >
+                <option >Select Degree</option>
+                <optgroup label="Profesional">
+                    <option value="BTech" >B.Tech</option>
+                    <option value="BE" >Bachelor of Engineering</option>
+                </optgroup>
+                <optgroup label="Ganeral">
+                    <option value="BEd">B.Ed.</option>
+                    <option value="BCA" selected>BCA</option>
+                    <option value="Phd">P.hd</option>
+                </optgroup>
+            </select>
+
+            <input list="state" >
+            <datalist id="state">
+                <option value="Uttarakhand">
+                <option value="Mumbai">
+                <option value="Shimala">
+                <option value="Rishikesh">
+                <option value="Goa">
+            </datalist>
+            <br><br>
+
+            <label>Select Gender:</label>           <!--name value must be same-->
+            <label for="Male">Male</label>
+            <input type="radio" name="geneder" id="Male">
+            <label for="Female">Female</label>
+            <input type="radio" name="geneder" id="Female">
+            <br><br>
+
+            <textarea cols="50" rows="6" placeholder="Enter text" required></textarea>
+            <br><br>
+
+            <input type="checkbox" name="HTML" id="HTML">
+            <lable for="HTML">HTML</lable>
+            <input type="checkbox" name="CSS" id="CSS">
+            <lable for="CSS">CSS</lable>
+            <input type="checkbox" name="JS" id="script">
+            <lable for="script">Java Script</lable>
+            <br><br>
+            
+            <input type="button" onclick="alert('oooho...! what is this.') " value="Alert..!">
+        <br><br>
+            <input type="reset" value="reset value">
+            <input type="submit" name="submit"  value="Submit">
+            <!-- or -->
+            <button>Submit</button>
+        </br></br>
+            <input type="image" src="ImagePDF\3.png" height="50px" width="180px">
+
+        </form>
+        <br><br><br>
+
+        <label>Time</label>
+        <input type="time" name="submittime">
+    <br><br>
+        <lable>Date and time</lable>
+        <input type="datetime-local">
+    <br><br>
+        <label>color</label>
+        <input type="color">
+        <label>range</label>
+        <input type="range" min="1" max="10">
+    </br></br>
+        <label>search</label>
+        <input type="search">
+    </br></br>
+        <label>link submit</label>
+        <input type="url" name="submiturl">
+    </br></br>
+        <label>Choose audio only</label>
+        <input type="file" accept="audio/*"> 
+        <label>Choose image only</label>
+        <input type="file" accept="image/*">
+        <label>chosse audio, video, image</label>
+        <input type="file" accept="audio/*, video/*, image/*" multiple>         <!--by multiple can choose multiple file at a time-->
+        
+
+        <br><br><br><br>
+
+        <!-- <fieldset>, <legend>: use in form. -->
+            <form>
+                <fieldset>
+                    <legend>Personal Info.</legend>
+                    <label>First name:</label>
+                    <input type="text" name="text" required><br><br>
+                    <label>Last name:</label>
+                    <input type="text" name="text" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Contect Info.</legend>
+                    <label>Phone</label>
+                    <input type="number" name="number"><br><br>
+                    <label>E-mail</label>
+                    <input type="email" name="email">
+                </fieldset>
+            </form>
+            <br><br>
+
+
+        <!-- span tag: is a inline level tag...main use decorate the any tag in between -->
+        <p>Lorem ipsum dolor sit amet consectetur, <span>adipisicing elit. Officiis laudantium</span> nisi iusto.</p>
+        <span>Hello..!</span>
+        <span>Hello..!</span>
+        <span>Hello..!</span>
+
+
+        <!--div tag: is a block level tag-->
+        <div style="border: 3px solid black;">World----?</div>
+        <div id="sec">World----?</div>
+        </br></br>
+
+        <!--<section>: create section in web page like div tag but search engine firstly search <section>, not div-->
+        <section>
+            <h3>This is section tag</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tempore.</p>
+        </section>
+
+
+        <!--strong, em tag use for bolt text and italic-->
+        <p>Lorem ipsum dolor sit amet consectetur <strong><em>Pawan Bisht</em></strong> adipisicing elit. <em>pawan BISHT</em> minus perferendis tempore? Dolores, nulla omnis quod necessitatibus possimus pariatur molestias?</p>
+
+
+        <!--object tag, embed tag, iframe tag:   use for embed(jodna) the data(images, videos, pdfs)-->
+        <object data="ImagePDF/4.jpg" width="100%" height="300"></object>                      <!--height by default consider as a 300px-->
+        <embed src="ImagePDF/3.JPG" width="500" height="600"></embed><br><br>
+        <iframe src="ImagePDF/3.JPG"  width="500" height="600" frameborder="0" scrolling="no"></iframe>
+        <br><br>
+        <object data="ImagePDF/Intern.pdf" width="100%" height="400"></object>
+        <embed src="ImagePDF/Intern.pdf" width="100%" height="400">
+        <iframe src="ImagePDF/Intern.pdf" width="100%" height="400"></iframe>
+        <br><br>
+        <object data="videoAudio/1x1.mp4" width="400" height="300"></object>        <!--but not use-->
+        <embed src="videoAudio/1x1.mp4" width="400" height="300">            <!--but not use-->
+        <iframe src="videoAudio/1x1.mp4" width="400" height="300" frameborder="0"></iframe>          <!--can use-->
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lDCQo7zGZG4" frameborder="8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen name="ifrme_a"></iframe>
+        <p><a href="videoAudio/1x1.mp4" target="ifrme_a">click link new video in inline frame</a></p>
+
+            <br>
+
+        <!-- <svg width="100"  style="border: 1px solid red">  </svg>:   2D diagram -->
+        <svg style="border: 9px solid red;" width="400" height="400">
+            <circle cx="100" cy="100" r="80" fill="yellow" stroke="green" stroke-width="7"/>
+            <rect rx="20" ry="30" x="190" y="200" width="200" height="150" fill="orange" />
+        </svg>
+        </br></br>
+
+        <!--<nav>: create navigation bar-->
+            <nav>
+                <a href="#">Home</a> |       
+                <a href="#">Contect</a> | 
+                <a href="#">eamil</a>  |
+                <a href="#">Kinks</a>  |
+                <a href="#">About As</a>    
+            </nav>
+        </br></br>
+
+        <!--<output>: use for some output screen and does some event-->
+            <form oninput="result.value=parseInt(n1.value)+parseInt(n2.value)">
+                <input type="texr" name="n1">
+                <input type="text" name="n2">
+                <label>O/P=</label>
+                <output name="result"></output>
+            </form>
+        </br></br>
+
+        <!--<pictuer>, <source>: according to device picture size is change, use in responsive our website --> 
+            <picture>
+                <source media="(min-width:750px)" srcset="ImagePDF/2.PNG" width="100%", height="100%" >
+                <source media="(min-width:550px)" srcset="ImagePDF/5.jpg" width="100%", height="100%">
+                <img src="ImagePDf/1.PNG" width="100%", height="100%">
+            </picture>
+        </br></br>
+
+        <!--<ruby>, <rb>, <rt>, <rp>-->
+            <ruby><rb>HTML</rb><rt>Hyper text markup language</rt> is a heavily used in internet web application</ruby>
+        </br></br>
+
+        <!--<small>, <big>-->
+            <p>Honesty is <big>the</big> <small>think</small> that in work on it.</p>
+
+            <marquee scrollamount="10" direction="up" height="100px" hspace="500px" behavior="alternate"> <h2>Hi, my name is PAWAN</h2></marquee>
+    </body>
+</html>

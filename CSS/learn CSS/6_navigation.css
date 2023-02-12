@@ -1,0 +1,13 @@
+ul li{
+	list-style:none;
+	font-variant:small-caps;
+		float:left;
+		margin:20px;
+		padding:10px;
+		background:gray;
+}
+
+ul li:hover{
+	background:white;
+		border-bottom:3px solid red;
+}

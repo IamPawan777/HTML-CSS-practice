@@ -1,0 +1,11 @@
+.shadow{
+text-align:center;            /*align in browser(left,right,center) */        
+text-decoration:underline;		/*decoration(underline,overline,line-through*/
+text-transform:capitalize;		/*words transform(uppercase,lowercase,capitalize)*/
+text-shadow:black 4px 4px 3px;	/*shadow in word(:color right bottom blur)*/
+word-spacing:10px;        		/*spacing in the text*/
+letter-spacing:5px;				/*spacing in the latter*/
+line-height:200px;				/*increase height*/
+text-indent:300px;				/*paragraph starting gap*/
+
+	}		

@@ -1,0 +1,9 @@
+#font{
+	font-family;"time new roman", arial, serif;
+	font-size:2em;
+	font-style:italic;
+	font-weight:bolt(700);
+	font-variant:small-caps;
+	background-color:tomato;
+	
+}

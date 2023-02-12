@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Ubuntu&display=swap');
+h1, h4, h5, li{
+    font-family: 'Dancing Script', cursive;
+}
+p, h2, h3, label{
+    font-family: 'Ubuntu', sans-serif;
+}
+span{
+    color: rgb(20, 220, 33);
+    background: rgb(3, 43, 43);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    /* font-size: large; */
+}
+div{
+    background-color: rgb(179, 112, 241);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
